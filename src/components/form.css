@@ -1,5 +1,9 @@
 .form-box{
-    margin: 50px;
+    width: 40%;
+    height: auto;
+    margin:  auto;
+    justify-content: center;
+    align-items: center;
 }
 
 input{
