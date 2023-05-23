@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import React, { useEffect, useState } from "react";
 import "./form.css";
 const Form = () => {
@@ -14,6 +15,7 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         localStorage.setItem('user_data', JSON.stringify(data))
+        Cookies.set("bio_data",JSON.stringify(data))
     }
 
     const handleChange = (e) => {
@@ -24,7 +26,9 @@ const Form = () => {
 
 
     let get_bioData = localStorage.getItem('user_data');
+    let get_bioData1 = Cookies.get('bio_data');
     console.log(get_bioData, "i am get bio dtata")
+    console.log(get_bioData1, "i am cookies data")
 
     return (
         <div className="form-box">
