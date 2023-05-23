@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "./form.css";
 
 const Form = () => {
@@ -31,6 +31,7 @@ const Form = () => {
 
     console.log(local_bioData, "i am local storage data")
     console.log(cookie_bioData, "i am cookies data")
+    console.log(data, "i am array data")
 
     return (
         <div className="form-box">
